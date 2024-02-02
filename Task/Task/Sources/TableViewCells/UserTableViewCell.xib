@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableViewCell" rowHeight="109" id="KGk-i7-Jjw" customClass="UserTableViewCell" customModule="Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTv-0j-r13">
+                        <rect key="frame" x="16" y="11.999999999999998" width="288" height="20.333333333333329"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.329999999999998" id="DNd-3D-KP4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nes-pV-YO3">
+                        <rect key="frame" x="16" y="44.333333333333336" width="288" height="20.333333333333336"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.329999999999998" id="2kN-HV-Yc5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNc-zD-aid">
+                        <rect key="frame" x="16" y="76.666666666666671" width="288" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Nes-pV-YO3" secondAttribute="trailing" constant="16" id="3tE-mn-sZ7"/>
+                    <constraint firstItem="Nes-pV-YO3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="66J-mO-sRE"/>
+                    <constraint firstItem="oTv-0j-r13" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="7TT-RL-x74"/>
+                    <constraint firstItem="TNc-zD-aid" firstAttribute="top" secondItem="Nes-pV-YO3" secondAttribute="bottom" constant="12" id="CqW-tN-vl1"/>
+                    <constraint firstAttribute="trailing" secondItem="oTv-0j-r13" secondAttribute="trailing" constant="16" id="Eqe-Y5-4vJ"/>
+                    <constraint firstItem="oTv-0j-r13" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="JcS-RQ-kbi"/>
+                    <constraint firstAttribute="bottom" secondItem="TNc-zD-aid" secondAttribute="bottom" constant="12" id="PSX-tX-80X"/>
+                    <constraint firstItem="TNc-zD-aid" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ZCg-DW-jRe"/>
+                    <constraint firstAttribute="trailing" secondItem="TNc-zD-aid" secondAttribute="trailing" constant="16" id="ZmX-vR-Afs"/>
+                    <constraint firstItem="Nes-pV-YO3" firstAttribute="top" secondItem="oTv-0j-r13" secondAttribute="bottom" constant="12" id="ofZ-C4-sqX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailLabel" destination="TNc-zD-aid" id="bPb-St-5XM"/>
+                <outlet property="idLable" destination="Nes-pV-YO3" id="d4m-2q-gvw"/>
+                <outlet property="userNameLabel" destination="oTv-0j-r13" id="Lp2-eP-syD"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="40.492957746478872"/>
+        </tableViewCell>
+    </objects>
+</document>
